@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+     --dark-black: #000000;
+     --dark-brown: #2A1A1F;
+    --dark-lbrown: #764134;
+
+    --orange: #E98A15;
+    --beige: #EDEAD0;
+
+    --light-primary: #FAC898;
+    --light-blue: #6CA6C1;
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +24,85 @@
 }
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-color);
+    background-color: --beige;
+    color: var(--dark-brown);
 }
+
+a{
+    color: var(--dark-brown);
+}
+a:visited {
+    color: var(--dark-brown);
+}
+
+ul {
+    display: flex;
+align-items: center;
+}
+
+li {
+    margin:4rem 1.5rem 4rem 1.5rem;
+    padding:1rem;
+    font-size: 1.3rem;
+}
+
+li:hover {
+    background-color: var(--light-primary);
+}
+
+h1 {
+    margin:4.5rem;
+    margin-top:6rem;
+}
+
+.about-us {
+    display:flex;
+    align-items:center;
+    margin:1rem;
+}
+
+h2 {
+    text-align: right;
+    margin:2rem;
+    margin-right:5rem;
+}
+
+p {
+    margin:5rem;
+}
+
+.photo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about {
+    display: flex;
+    align-items: flex-end;
+    margin-left:25rem;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin:3rem 10rem 3rem 10rem;
+}
+
+label {
+    padding:0.5rem;
+    padding-top:1.5rem;
+}
+
+button{
+    background-color: #E98A15;
+    color:#FAC898;
+    padding:0.5rem;
+    border-radius:0.2rem;
+    margin-top:2rem;
+}
+
+#consent {
+    display: flex;
+    align-items: flex-end;
+}
+
