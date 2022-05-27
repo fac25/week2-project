@@ -7,9 +7,148 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
 }
 
 body {
+    background-color: var(--secondary-background-color);
+}
+
+.main-container {
+    margin: 5%;
+    border-radius: 10px;
     background-color: var(--primary-background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.banner {
+    text-align: center;
+    height: 50%;
+    border: 1px solid gray;
+}
+
+main {
+    margin: 0 10%;
+}
+
+section {
+    margin-top: 5vw;
+}
+
+h2 {
+    text-align: center;
+    padding: 16px 0;
+    color: var(--secondary-color);
+}
+
+.team-members-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+}
+
+.team-members-article article {
+    border-radius: 5px;
+    background-color: var(--secondary-background-color);
+}
+
+.article-header {
+    display: flex;
+    height: 4vw;
+}
+
+.article-header img {
+    width: 4vw;
+    margin-left: 1vw;
+    border-radius: 50%;
+}
+
+.article-header h3 {
+    width: 10vw;
+    text-align: center;
+    align-self: center;
+}
+
+article>img,
+h4,
+p,
+a {
+    margin: 1vw;
+}
+
+article>img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+article>a {
+    display: block;
+}
+
+.get-in-touch .name,
+.message,
+button {
+    width: 100%;
+}
+
+.get-in-touch input,
+textarea,
+button {
+    margin-bottom: 2vw;
+    padding: 1vw 0;
+    color: black;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.get-in-touch textarea {
+    height: max(15vw, 150px);
+}
+
+.get-in-touch button {
+    width: 40%;
+    margin-left: 30%;
+    background-color: var(--primary-background-color);
+    border: 1px solid gray;
+    border-radius: 20px;
     color: var(--primary-color);
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
+}
+
+.get-in-touch button:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.email-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-wrapper input {
+    width: 48%;
+}
+
+footer {
+    margin-top: 5vw;
+    padding: 2vw 0;
+    text-align: center;
 }
