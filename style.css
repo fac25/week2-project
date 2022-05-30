@@ -76,6 +76,7 @@ nav a:hover {
 
 p {
     font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
 }
 
 h1 {
