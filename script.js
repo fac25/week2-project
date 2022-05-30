@@ -25,24 +25,24 @@ const teamMembers = [
     img: "./img/html.jpg",
     alt: "Lisa's avatar",
   },
-  // {
-  //   name: "Karwan",
-  //   role: "CO-Founder and Developer",
-  //   about:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
-  //   avatar: "./img/karwan-avatar.jpg",
-  //   img: "./img/css.jpg",
-  //   alt: "Karwan's avatar",
-  // },
-  // {
-  //   name: "Patrick",
-  //   role: "Junior Developer",
-  //   about:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
-  //   avatar: "./img/karwan-avatar.jpg",
-  //   img: "./img/css.jpg",
-  //   alt: "Patrick's avatar",
-  // },
+  {
+    name: "Karwan",
+    role: "CO-Founder and Developer",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
+    avatar: "./img/karwan-avatar.jpg",
+    img: "./img/css.jpg",
+    alt: "Karwan's avatar",
+  },
+  {
+    name: "Patrick",
+    role: "Junior Developer",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
+    avatar: "./img/karwan-avatar.jpg",
+    img: "./img/css.jpg",
+    alt: "Patrick's avatar",
+  },
 ];
 
 teamMembers.map((member) => {
@@ -56,7 +56,7 @@ teamMembers.map((member) => {
   const tmImage = document.createElement("img");
   const tmRole = document.createElement("h4");
   const tmShortAbout = document.createElement("p");
-  const tmReadMOre = document.createElement("button");
+  const tmReadMore = document.createElement("button");
   const tmLongAbout = document.createElement("span");
   const tmPortfolio = document.createElement("a")
 
@@ -70,19 +70,16 @@ teamMembers.map((member) => {
   tmRole.innerHTML = member.role;
   tmShortAbout.innerHTML = member.shortAbout;
   tmLongAbout.innerHTML = member.longAbout;
-  tmReadMOre.innerHTML = "Read more...";
+  tmReadMore.innerHTML = "Read more...";
   tmPortfolio.innerHTML = "Portfolio";
 
   tmLongAbout.classList.add("hidden")
   tmPortfolio.classList.add("hidden")
 
-  tmReadMOre.onclick = handleReadMore =()=> {
+  tmReadMore.onclick = handleReadMore =()=> {
     tmLongAbout.classList.remove("hidden")
     tmPortfolio.classList.remove("hidden")
   }
-
-  tmReadMOre.style.backgroundColor = "white";
-  tmReadMOre.style.width = "20px";
 
   tmArticle.append(tmHeader);
   tmHeader.append(tmAvatar);
@@ -92,7 +89,7 @@ teamMembers.map((member) => {
   tmArticle.append(tmShortAbout);
   tmShortAbout.append(tmLongAbout)
   tmShortAbout.append(tmPortfolio)
-  tmArticle.append(tmReadMOre);
+  tmArticle.append(tmReadMore);
 
   
 
@@ -107,9 +104,3 @@ let message = document.getElementById("message");
 const handleSubmit = () => {
   console.log(name.value, email.value, subject.value, message.value);
 };
-
-
-// const handleReadmore =() =>{
-//   tmLongAbout.classList.remove();
-//   // tmLongAbout.classList.add("show")
-// }
