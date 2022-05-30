@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" id="themeProvider" href="./themes/light.css" />
+    <link rel="stylesheet" id="themeProvider" href="./themes/dark.css" />
     <title>L&K</title>
 </head>
 
@@ -22,6 +22,13 @@
         <header id="top-header">
             <nav>
                 <a href="#top-header">L&K</a>
+                <div class="dropdown">
+                    <div class="dropdown-wrapper">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <ul>
                     <li><a href="#top-header">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
@@ -33,14 +40,14 @@
                 <p>Hello and Welcome to <span>L&K</span></p>
                 <h1><span class="right-span">Web Development</span> <span class="left-span">and Design Agency</span>
                 </h1>
-                <!-- <h1>Web</h1>
-                <h1>
+                <!-- <div class="banner-wrapper">
+                    <h1>Web</h1>
                     <ul>
                         <li>Development</li>
                         <li>Design</li>
                     </ul>
-                </h1>
-                <h1>Agency</h1> -->
+                    <h1>Agency</h1>
+                </div> -->
                 <p>Our incredible team will help you to bring your Dream website to live!</p>
             </div>
         </header>
@@ -55,7 +62,9 @@
             <section>
                 <h2>Our Services</h2>
                 <ul>
-                    <li><p>Design a Website for </p></li>
+                    <li>
+                        <p>Design a Website for </p>
+                    </li>
                 </ul>
             </section>
             <!-- add pictures and text -->
@@ -76,7 +85,7 @@
                             <option value="general">General inquiry</option>
                             <option value="help">Help</option>
                             <option value="quote">Get a quote</option>
-                          </select>
+                        </select>
                     </div>
                     <textarea class="message" name="message" id="message" placeholder="Your message ..."
                         required></textarea>
