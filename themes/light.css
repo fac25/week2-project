@@ -1,7 +1,23 @@
 :root {
-    --primary-background-color: white;
-    --second-background-color: #341C09;
-    --primary-color: #341C09;
-    --secondary-color: #FC7307;
+    --primary-background-color: #fffcf3;
+    --secondary-background-color: #d17c12;
+    --primary-color: #2A1A1F;
+    --secondary-color: #e1b488;
 }
 
+
+
+/*
+{
+--dark-black: #000000;
+--dark-brown: #2A1A1F;
+
+
+--orange: #E98A15;
+
+
+#E98A15
+
+--light-primary: #FAC898;
+--light-blue: #6CA6C1;
+}*/
