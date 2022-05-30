@@ -29,6 +29,14 @@ const teamMembers = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
     avatar: "./img/karwan-avatar.jpg",
     img: "./img/css.jpg",
+  },
+  {
+    name: "Patrick",
+    role: "Junior Developer",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...",
+    avatar: "./img/karwan-avatar.jpg",
+    img: "./img/css.jpg",
   }
 ];
 
