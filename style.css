@@ -227,19 +227,20 @@ button {
     color: var(--secondary-color);
 }
 
-.email-wrapper {
+ .email-wrapper {
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: column;
+} 
 
-.email-wrapper input, select {
+/* .email-wrapper input, select {
     width: 48%;
-}
+} */
 
 .email-wrapper select{
     background-color: var(--primary-background-color);
     height: 3.6vw;
-}
+    margin-bottom:1.5rem;
+} 
 
 #consent{
     width: 20px ;
