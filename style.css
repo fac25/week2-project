@@ -131,7 +131,13 @@ section {
 }
 
 h2 {
+<<<<<<< HEAD
     margin-bottom: 3vw;
+=======
+
+    margin-bottom: 3vw;
+
+>>>>>>> e06db9492c369e996d2ac93f11425cc54183d30a
     text-align: center;
     padding: 16px 0;
     color: var(--secondary-color);
@@ -236,15 +242,16 @@ button {
     width: 48%;
 }
 
-#consent {
-    width: 20px;
+.email-wrapper select{
+    background-color: var(--primary-background-color);
+    height: 3.6vw;
+}
+
+#consent{
+    width: 20px ;
     height: 20px;
 }
 
-.email-wrapper select{
-    height: 3vw;
-    color: var(--secondary-background-color);
-}
 
 footer {
     border-top: 0.5px solid silver;
