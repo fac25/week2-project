@@ -29,7 +29,16 @@
             </nav>
             <div class="banner">
                 <p>Hello and Welcome to <span>L&K</span></p>
-                <h1><span class="right-span">Web Development</span> <span class="left-span">and Design Agency</span></h1>
+                <!-- <h1><span class="right-span">Web Development</span> <span class="left-span">and Design Agency</span>
+                </h1> -->
+                <h1>Web</h1>
+                <h1>
+                    <ul>
+                        <li>Development</li>
+                        <li>Design</li>
+                    </ul>
+                </h1>
+                <h1>Agency</h1>
                 <p>Our incredible team will help you to bring your Dream website to live!</p>
             </div>
         </header>
@@ -37,7 +46,8 @@
         <main>
             <section class="about-us">
                 <h2>About Us</h2>
-                <p>At L&K Agency, we are proud of our Fast, Stunning, Reliable and Affordable services, you can not go wrong by choosing our amazing team to build and Design your dream Website</p>
+                <p>At L&K Agency, we are proud of our Fast, Stunning, Reliable and Affordable services, you can not go
+                    wrong by choosing our amazing team to build and Design your dream Website</p>
             </section>
 
             <section>
@@ -80,15 +90,19 @@
             <!-- add aciton -->
             <section class="get-in-touch">
                 <h2>Get In Touch</h2>
-                <form action="#">
-                    <input type="text" class="name" placeholder="Name" required>
+                <form>
+                    <input type="text" class="name" name="name" id="name" placeholder="Name" required>
                     <div class="email-wrapper">
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Subject" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
                     </div>
                     <textarea class="message" name="message" id="message" placeholder="Your message ..."
                         required></textarea>
-                    <button type="submit">Send message</button>
+                    <div class="consent">
+                        <input id="consent" name="consent" type="checkbox" />
+                        <label for="consent">I would like to receive future updates</label>
+                    </div>
+                    <button onclick="handleSubmit()">Send message</button>
                 </form>
             </section>
         </main>

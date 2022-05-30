@@ -61,5 +61,15 @@ teamMembers.map((member) => {
   tmArticle.append(tmAbout);
   tmArticle.append(tmReadMOre);
 
-  document.getElementById("team-members-articles").appendChild(tmArticle);
+  document.getElementById("team-members-articles").append(tmArticle);
 });
+
+
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+let subject = document.getElementById("subject");
+let message = document.getElementById("message");
+
+const handleSubmit = () =>{
+  console.log(name.value, email.value, subject.value, message.value)
+}

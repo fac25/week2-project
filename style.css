@@ -187,7 +187,12 @@ button {
     height: max(15vw, 150px);
 }
 
+.consent{
+    text-align: center;
+}
+
 .get-in-touch button {
+    display: block;
     width: 40%;
     margin-left: 30%;
     background-color: var(--primary-background-color);
