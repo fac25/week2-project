@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -17,14 +19,14 @@
         </select>
     </div>
     <div class="main-container">
-        <header>
+        <header id="top-header">
             <nav>
-                <a href="#">L&K</a>
+                <a href="#top-header">L&K</a>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#top-header">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#our-team">Our Team</a></li>
+                    <li><a href="#get-in-touch">Get in Touch</a></li>
                 </ul>
             </nav>
             <div class="banner">
@@ -44,7 +46,7 @@
         </header>
 
         <main>
-            <section class="about-us">
+            <section class="about-us" id="about-us">
                 <h2>About Us</h2>
                 <p>At L&K Agency, we are proud of our Fast, Stunning, Reliable and Affordable services, you can not go
                     wrong by choosing our amazing team to build and Design your dream Website</p>
@@ -57,20 +59,24 @@
                 </ul>
             </section>
             <!-- add pictures and text -->
-            <section class="our-team">
+            <section class="our-team" id="our-team">
                 <h2>Our Team</h2>
                 <div id="team-members-articles">
                 </div>
             </section>
 
             <!-- add aciton -->
-            <section class="get-in-touch">
+            <section class="get-in-touch" id="get-in-touch">
                 <h2>Get In Touch</h2>
                 <form class="user-form">
                     <input type="text" class="name" name="name" id="name" placeholder="Name" required>
                     <div class="email-wrapper">
                         <input type="email" id="email" placeholder="Email" required>
-                        <input type="text" id="subject" placeholder="Subject" required>
+                        <select id="subject" name="subject">
+                            <option value="general">General inquiry</option>
+                            <option value="help">Help</option>
+                            <option value="quote">Get a quote</option>
+                          </select>
                     </div>
                     <textarea class="message" name="message" id="message" placeholder="Your message ..."
                         required></textarea>
