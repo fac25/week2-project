@@ -14,6 +14,17 @@ body {
     background-color: var(--secondary-background-color);
 }
 
+.theme{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+.theme select{
+    background-color: var(--primary-background-color);
+    border: none;
+}
+
 .main-container {
     margin: 5%;
     border-radius: 10px;
@@ -40,9 +51,61 @@ nav a:hover {
 }
 
 .banner {
+    padding-top: 10vw;
     text-align: center;
     height: 50%;
-    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.banner > p > span{
+    color: var(--secondary-color);
+}
+
+.banner > h1{
+    padding: 3vw 0;
+}
+
+.banner > h1 > span{
+    position: relative;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.right-span::before {
+    content: "";
+    color: var(--primary-background-color);
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background-color);
+    border-right: max(0.175em, 2.5px) solid var(--primary-color);
+    animation: right-span 4s steps(17) infinite;
+}
+
+.left-span::before {
+    content: "";
+    color: var(--primary-background-color);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background-color);
+    border-left: max(0.175em, 2.5px) solid var(--primary-color);
+    animation: left-span 4s steps(17) infinite;
+}
+
+@keyframes right-span {
+    35%,
+    80% {
+        right: calc(100% + 5px);
+    }
+}
+@keyframes left-span {
+    35%,
+    80% {
+        left: calc(100% + 5px);
+    }
 }
 
 main {
@@ -59,24 +122,25 @@ h2 {
     color: var(--secondary-color);
 }
 
-.team-members-article {
+#team-members-articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vw;
 }
 
-.team-members-article article {
+#team-members-articles article {
     border-radius: 5px;
     background-color: var(--secondary-background-color);
 }
 
 .article-header {
     display: flex;
-    height: 4vw;
+    height: 5vw;
 }
 
 .article-header img {
     width: 4vw;
+    margin-top: 1vw;
     margin-left: 1vw;
     border-radius: 50%;
 }
@@ -123,12 +187,17 @@ button {
     height: max(15vw, 150px);
 }
 
+.consent{
+    text-align: center;
+}
+
 .get-in-touch button {
+    display: block;
     width: 40%;
     margin-left: 30%;
     background-color: var(--primary-background-color);
     border: 1px solid gray;
-    border-radius: 20px;
+    border-radius: 2vw;
     color: var(--primary-color);
     font-size: clamp(0.5rem, 1.5vw, 2rem);
 }
@@ -148,6 +217,7 @@ button {
 }
 
 footer {
+    border-top: 0.5px solid silver;
     margin-top: 5vw;
     padding: 2vw 0;
     text-align: center;

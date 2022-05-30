@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./themes/dark.css">
+    <link rel="stylesheet" id="themeProvider" href="./themes/dark.css" />
     <title>L&K</title>
 </head>
 
 <body>
+    <div class="theme">
+        <select id="selectTheme">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
+    </div>
     <div class="main-container">
         <header>
             <nav>
@@ -22,63 +28,57 @@
                 </ul>
             </nav>
             <div class="banner">
-                <h1>L&K Development</h1>
+                <p>Hello and Welcome to <span>L&K</span></p>
+                <h1><span class="right-span">Web Development</span> <span class="left-span">and Design Agency</span>
+                </h1>
+                <!-- <h1>Web</h1>
+                <h1>
+                    <ul>
+                        <li>Development</li>
+                        <li>Design</li>
+                    </ul>
+                </h1>
+                <h1>Agency</h1> -->
+                <p>Our incredible team will help you to bring your Dream website to live!</p>
             </div>
         </header>
 
         <main>
             <section class="about-us">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>At L&K Agency, we are proud of our Fast, Stunning, Reliable and Affordable services, you can not go
+                    wrong by choosing our amazing team to build and Design your dream Website</p>
+            </section>
+
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Design a Website for </li>
+                </ul>
             </section>
             <!-- add pictures and text -->
             <section class="our-team">
                 <h2>Our Team</h2>
-                <div class="team-members-article">
-                    <article>
-                        <div class="article-header">
-                            <img src="./img/lisa-avatar.jpg" alt="Lisa's avatar">
-                            <h3>Lisa</h3>
-                        </div>
-                        <img src="./img/css.jpg" alt="Photo of Lisa">
-                        <h4>CEO, Co-Founder, Developer and Designer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore... </p>
-                        <a href="#">Read more...</a>
-                    </article>
-                    <!-- add read more buttons -->
-                    <article>
-                        <div class="article-header">
-                            <img src="./img/karwan-avatar.jpg" alt="Karwan's avatar">
-                            <h3>Karwan</h3>
-                        </div>
-                        <img src="./img/html.jpg" alt="Photo of Karwan">
-
-                        <h4>Co-Founder and Developer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor...</p>
-                        <a href="#">Read more...</a>
-                    </article>
+                <div id="team-members-articles">
                 </div>
             </section>
 
             <!-- add aciton -->
             <section class="get-in-touch">
                 <h2>Get In Touch</h2>
-                <form action="#">
-                    <input type="text" class="name" placeholder="Name">
+                <form>
+                    <input type="text" class="name" name="name" id="name" placeholder="Name" required>
                     <div class="email-wrapper">
-                        <input type="email" placeholder="Email">
-                        <input type="text" placeholder="Subject">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
                     </div>
-                    <textarea class="message" name="message" id="message" placeholder="Your message ..."></textarea>
-                    <button>Send message</button>
+                    <textarea class="message" name="message" id="message" placeholder="Your message ..."
+                        required></textarea>
+                    <div class="consent">
+                        <input id="consent" name="consent" type="checkbox" />
+                        <label for="consent">I would like to receive future updates</label>
+                    </div>
+                    <button onsubmit="handleSubmit()">Send message</button>
                 </form>
             </section>
         </main>
