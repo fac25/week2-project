@@ -12,3 +12,12 @@ const themeSelector = () => {
 };
 
 themeSelector();
+
+
+const readMoreBtn = document.querySelector('.read-more-button');
+const text = document.querySelector('.read-more');
+
+
+readMoreBtn.addEventListener('click',(e)=>{
+    text.classList.toggle('read-more');
+})
