@@ -1,23 +1,74 @@
+/* --------------- Theme control --------------- */
+
 const themeSelector = () => {
   const selectTheme = document.getElementById("selectTheme");
   const themeProvider = document.getElementById("themeProvider");
 
-  const activeTheme = (theme) => {
-    themeProvider.setAttribute("href", `./themes/${theme}.css`);
-  };
+  themeProvider.setAttribute("href", `./themes/${selectTheme.value}.css`);
 
   selectTheme.addEventListener("change", () => {
-    activeTheme(selectTheme.value);
+    themeProvider.setAttribute("href", `./themes/${selectTheme.value}.css`);
   });
 };
 
 themeSelector();
 
 
-const readMoreBtn = document.querySelector('.read-more-button');
-const text = document.querySelector('.read-more');
+/* --------------- Dropdown button --------------- */
+
+const dropDown = document.getElementById("dropdown");
+const rightNav = document.getElementById("right-nav");
+
+const handleDropDown = () => {
+  if (rightNav.style.display === "block") {
+    rightNav.style.display = "none";
+  } else {
+    rightNav.style.display = "block";
+  }
+};
+
+dropDown.addEventListener("click", handleDropDown);
 
 
-readMoreBtn.addEventListener('click',(e)=>{
-    text.classList.toggle('read-more');
+/* --------------- Read more and less button --------------- */
+
+const readMoreBtn = document.getElementsByClassName("read-more-button");
+const readLessBtn = document.getElementsByClassName("read-less-button");
+
+for (i = 0; i < readMoreBtn.length; i++) {
+  let select = i;
+
+  readMoreBtn[i].addEventListener("click", () => {
+    const moreDetail = document.getElementsByClassName("more-detail");
+    moreDetail[select].style.display = "inline";
+    readMoreBtn[select].style.display = "none";
+    readLessBtn[select].style.display = "block";
+  });
+
+  readLessBtn[i].addEventListener("click", () => {
+    const moreDetail = document.getElementsByClassName("more-detail");
+    moreDetail[select].style.display = "none";
+    readLessBtn[select].style.display = "none";
+    readMoreBtn[select].style.display = "block";
+  });
+}
+
+
+/* --------------- Submit and less button --------------- */
+
+const submitBtn = document.getElementById("submit")
+
+const bodyBg = document.getElementsByTagName("body")
+
+const name = document.getElementById("name");
+const subject = document.getElementById("subject");
+
+const responseName = document.getElementById("response-name")
+const responseSubject = document.getElementById("response-subject")
+
+submitBtn.addEventListener("click", (e) =>{
+  e.preventDefault()
+  responseName.innerText = name.value;
+  responseSubject.innerText = subject.value;
+
 })

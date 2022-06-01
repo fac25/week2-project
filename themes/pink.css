@@ -1,0 +1,8 @@
+:root {
+    --primary-background-color: #250622;
+    --secondary-background-color: #811f5e;
+    --primary-color: white;
+    --secondary-color: #fe72c9;
+
+    --card-box-shadow: rgba(256, 256, 256, 0.5);
+}
