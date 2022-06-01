@@ -57,17 +57,23 @@ const submitBtn = document.getElementById("submit");
 
 const name = document.getElementById("name");
 const subject = document.getElementById("subject");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const consent = document.getElementById("consent")
 
 submitBtn.addEventListener("click", () => {
-  alert(
-    "Subject \t" +
-      subject.value +
-      "\n\nDear " +
-      name.value + "," +
-      "\n\nFirst of all, we would like to express our thanks for your interest in our Agency." +
-      "\n\nRegarding your inquiry, we are considering your request and get back to you as soon as possible" +
-      "\n\nYours sincerely," +
-      "\n\nLisa H"+
-      "\n\nSales Department | L&K Agency."
-  );
+  if (name.value && subject.value && email.value && message.value && consent.checked === true) {
+    alert(
+      "Subject \t" +
+        subject.value +
+        "\n\nDear " +
+        name.value +
+        "," +
+        "\n\nFirst of all, we would like to express our thanks for your interest in our Agency." +
+        "\n\nRegarding your inquiry, we are considering your request and get back to you as soon as possible" +
+        "\n\nYours sincerely," +
+        "\n\nLisa H" +
+        "\n\nSales Department | L&K Agency."
+    );
+  }
 });
