@@ -380,15 +380,16 @@ button,
     height: max(15vw, 150px);
 }
 
-.terms-and-conditions {
+.consent-wrapper {
     text-align: center;
     margin-bottom: 2vw;
 }
 
-.terms-and-conditions a {
-    text-decoration: underline;
-    color: var(--secondary-color);
+.consent-wrapper input{
+    width: max(0.8vw, 12px);
+    height: max(0.8vw, 12px);
 }
+
 
 .get-in-touch button {
     display: block;
