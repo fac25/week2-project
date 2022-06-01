@@ -221,7 +221,7 @@ section {
 }
 
 h2 {
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     text-align: center;
     padding: 16px 0;
     color: var(--secondary-color);
@@ -232,6 +232,7 @@ h2 {
 /* --------------- About us --------------- */
 
 #about-us p {
+    padding: 0;
     text-align: justify;
     font-size: clamp(0.6rem, 1.5vw, 1.5rem);
 }
@@ -247,6 +248,7 @@ h2 {
 
 .service-wrapper article img {
     width: 100%;
+    height: 15vw;
 }
 
 .service-wrapper article span {
@@ -296,7 +298,7 @@ h2 {
 }
 
 .article-header h3 {
-    width: 10vw;
+    margin-left: 3vw;
     text-align: center;
     align-self: center;
 }
@@ -378,22 +380,23 @@ button,
     height: max(15vw, 150px);
 }
 
-.terms-and-conditions {
+.consent-wrapper {
     text-align: center;
     margin-bottom: 2vw;
 }
 
-.terms-and-conditions a {
-    text-decoration: underline;
-    color: var(--secondary-color);
+.consent-wrapper input{
+    width: max(0.8vw, 12px);
+    height: max(0.8vw, 12px);
 }
+
 
 .get-in-touch button {
     display: block;
     width: 40%;
     margin-left: 30%;
     background-color: var(--primary-background-color);
-    border: 1px solid gray;
+    border: 1px solid var(--secondary-color);
     border-radius: 2vw;
     color: var(--primary-color);
 }
@@ -403,27 +406,6 @@ button,
     color: var(--secondary-color);
 }
 
-
-/* --------------- Aside --------------- */
-
-.response-wrapper {
-    width: 50%;
-    height: 50vh;
-    margin: 20vh 0 0 25%;
-    border: 1px solid var(--secondary-background-color);
-    border-radius: 5px;
-    background-color: var(--primary-background-color);
-}
-
-aside * {
-    margin-bottom: 2vw;
-    padding: 0;
-    color: var(--primary-background-color);
-}
-
-aside span{
-    margin-left: 10px;
-}
 
 /* --------------- Footer --------------- */
 
@@ -448,6 +430,10 @@ footer {
 @media only screen and (max-width:1200px) {
     .service-wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .service-wrapper article img{
+        height: 85%;
     }
 }
 
