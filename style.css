@@ -335,7 +335,7 @@ button {
 /* --------------- Footer --------------- */
 
 footer {
-    border-top: 0.5px solid silver;
+    border-top: 0.5px solid var(--secondary-color);
     margin-top: 5vw;
     padding: 2vw 0;
     text-align: center;
