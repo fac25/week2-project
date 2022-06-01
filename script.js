@@ -13,7 +13,6 @@ const themeSelector = () => {
 
 themeSelector();
 
-
 /* --------------- Dropdown button --------------- */
 
 const dropDown = document.getElementById("dropdown");
@@ -28,7 +27,6 @@ const handleDropDown = () => {
 };
 
 dropDown.addEventListener("click", handleDropDown);
-
 
 /* --------------- Read more and less button --------------- */
 
@@ -53,22 +51,23 @@ for (i = 0; i < readMoreBtn.length; i++) {
   });
 }
 
-
 /* --------------- Submit and less button --------------- */
 
-const submitBtn = document.getElementById("submit")
-
-const bodyBg = document.getElementsByTagName("body")
+const submitBtn = document.getElementById("submit");
 
 const name = document.getElementById("name");
 const subject = document.getElementById("subject");
 
-const responseName = document.getElementById("response-name")
-const responseSubject = document.getElementById("response-subject")
-
-submitBtn.addEventListener("click", (e) =>{
-  e.preventDefault()
-  responseName.innerText = name.value;
-  responseSubject.innerText = subject.value;
-
-})
+submitBtn.addEventListener("click", () => {
+  alert(
+    "Subject \t" +
+      subject.value +
+      "\n\nDear " +
+      name.value + "," +
+      "\n\nFirst of all, we would like to express our thanks for your interest in our Agency." +
+      "\n\nRegarding your inquiry, we are considering your request and get back to you as soon as possible" +
+      "\n\nYours sincerely," +
+      "\n\nLisa H"+
+      "\n\nSales Department | L&K Agency."
+  );
+});
