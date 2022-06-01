@@ -16,6 +16,9 @@
         <select id="selectTheme">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
         </select>
     </div>
     <div class="main-container">
@@ -39,14 +42,13 @@
             </nav>
             <div class="banner">
                 <p>Hello and Welcome to <span>L&K</span></p>
-                <!-- <h1><span class="right-span">Web Development</span> <span class="left-span">and Design Agency</span>
-                </h1> -->
+
                 <div class="text-animation-wrapper">
                     <h1>Web</h1>
-                    <ul class="text-animation">
-                        <li class="dev">Development</li>
-                        <li class="des">Design</li>
-                    </ul>
+                    <div class="text-animation">
+                        <h1 class="development-text">Development</h1>
+                        <h1 class="design-text">Design</h1>
+                    </div>
                     <h1>Agency</h1>
                 </div>
                 <p>We create digital experiences that excite and inspire</p>
@@ -54,7 +56,7 @@
         </header>
 
         <main>
-            <section class="about-us" id="about-us">
+            <section id="about-us">
                 <h2>About Us</h2>
                 <p>We are a team of professional designers, developers, marketers and IT specialists combining our
                     knowledge and expertise to create exceptional designs and strategies, tailored to your business’s
@@ -66,31 +68,37 @@
 
             <section id="services">
                 <h2>Our Services</h2>
-                <p>
-                    Design</br>
-                    Development</br>
-                    Digital Marketing</br>
-                    Consultancy</br>
-                    Creative & Responsive Web Design
-
-                </p>
+                <div class="service-wrapper">
+                    <article>
+                        <img src="./img/installation.webp" alt="Installation, Integration  and Update image">
+                        <h5>Installation, Integration and Update</h5>
+                    </article>
+                    <article>
+                        <img src="./img/design.jpg" alt="Design and UI image">
+                        <h5>Design and UI</h5>
+                    </article>
+                    <article>
+                        <img src="./img/maintenance.jpg" alt="Maintenance and Enhancement image">
+                        <h5>Maintenance and Enhancement</h5>
+                    </article>
+                </div>
             </section>
-            <!-- add pictures and text -->
             <section class="our-team" id="our-team">
                 <h2>Our Team</h2>
-                <div id="team-members-articles">
+                <div class="our-team-wrapper">
                     <article>
                         <div class="article-header">
                             <img src="./img/lisa-avatar.jpg" alt="Lisa's avatar">
                             <h3>Lisa</h3>
                         </div>
-                        <img src="./img/html.jpg" alt="Lisa's picture">
+                        <img src="./img/lisa.jpg" alt="Lisa's picture">
                         <h4>CEO, CO-Founder, Developer, Designer</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque expedita
-                            doloribus,<span> impedit eos, animi hic quae explicabo eveniet totam incidunt excepturi
+                            doloribus,<span class="hidden"> impedit eos, animi hic quae explicabo eveniet totam
+                                incidunt excepturi
                                 repudiandae tempore nihil voluptatibus. Nisi laudantium doloribus saepe
                                 assumenda.</span></p>
-                        <button>Read more...</button>
+                        <a href="#our-team" class="read-more-button">Read more...</a>
                     </article>
 
                     <article>
@@ -98,12 +106,14 @@
                             <img src="./img/karwan-avatar.jpg" alt="Karwan's avatar">
                             <h3>Karwan</h3>
                         </div>
-                        <img src="./img/css.jpg" alt="Karwan's picture">
+                        <img src="./img/karwan.png" alt="Karwan's picture">
                         <h4>CO-Founder and Developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod molestiae voluptatum
-                            doloremque. Sint, <span>at. Rerum molestias commodi sit, nobis voluptatum minima, ipsa dicta
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden">Laudantium quod
+                                molestiae voluptatum
+                                doloremque. Sint, at. Rerum molestias commodi sit, nobis voluptatum
+                                minima, ipsa dicta
                                 aliquid sequi ex, consectetur voluptates debitis.</span></p>
-                        <button>Read more...</button>
+                        <a href="#our-team" class="read-more-button">Read more...</a>
                     </article>
 
                     <article>
@@ -111,12 +121,15 @@
                             <img src="./img/karwan-avatar.jpg" alt="Gumball's avatar">
                             <h3>Gumball</h3>
                         </div>
-                        <img src="./img/css.jpg" alt="Gumball's picture">
+                        <img src="./img/gumball.png" alt="Gumball's picture">
                         <h4>Junior Developer</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ipsa sapiente? Mollitia id
-                            doloribus repellat, <span>dolore soluta libero explicabo? Exercitationem sint distinctio
-                                cumque! Aliquam, eveniet? Possimus, quam. Iste, eligendi nam.</span></p>
-                        <button>Read more...</button>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ipsa sapiente?
+                            <span class="hidden">Mollitia id
+                                doloribus repellat, dolore soluta libero explicabo? Exercitationem
+                                sint distinctio
+                                cumque! Aliquam, eveniet? Possimus, quam. Iste, eligendi nam.</span>
+                        </p>
+                        <a href="#our-team" class="read-more-button">Read more...</a>
                     </article>
 
                     <article>
@@ -124,12 +137,13 @@
                             <img src="./img/lisa-avatar.jpg" alt="Nicole">
                             <h3>Nicole</h3>
                         </div>
-                        <img src="./img/html.jpg" alt="Nicole's picture">
+                        <img src="./img/nicole.png" alt="Nicole's picture">
                         <h4>Junior Designer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facilis. <span>Praesentium
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facilis. <span
+                                class="hidden">Praesentium
                                 architecto eum nam veniam alias voluptas necessitatibus magni quibusdam eos, molestiae
                                 neque doloremque, adipisci est hic explicabo accusantium temporibus.</span></p>
-                        <button>Read more...</button>
+                        <a href="#our-team" class="read-more-button">Read more...</a>
                     </article>
                 </div>
             </section>
@@ -137,25 +151,30 @@
             <!-- add aciton -->
             <section class="get-in-touch" id="get-in-touch">
                 <h2>Get In Touch</h2>
-                <form class="user-form">
-                    <label for="name">Name</label>
-                    <input type="text" class="name" name="name" id="name" placeholder="Name" required>
-                    <div class="email-wrapper">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="general">General inquiry</option>
-                            <option value="help">Help</option>
-                            <option value="quote">Get a quote</option>
-                        </select>
+                <form>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" class="name" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <select class="subject" id="subject" name="subject">
+                                <option value="general">General inquiry</option>
+                                <option value="help">Help</option>
+                                <option value="quote">Get a quote</option>
+                            </select>
+                        </div>
                     </div>
-                    <label for="message">Your message</label>
+                    <label for="email">Email</label>
+                    <input type="email" class="email" id="email" placeholder="Email" required>
+                    <label for="message"> Message</label>
                     <textarea class="message" name="message" id="message" placeholder="Your message ..."
                         required></textarea>
-                    <div class="consent">
-                        <input id="consent" name="consent" type="checkbox" />
-                        <label for="consent">I would like to receive future updates</label>
+                    <div class="terms-and-conditions">
+                        <input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" />
+                        <label for="terms-and-conditions">I agree to the <a href="#get-in-touch">terms and
+                                conditions</a></label>
                     </div>
                     <button onsubmit="handleSubmit()">Send message</button>
                 </form>
